@@ -6,7 +6,7 @@ Feature: Bid
     When the user list all bids of user 1
     Then the below bids should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 1	  |	10		 | 10.00		|
+      | 1      | 1      | 10       | 10.00        |
 
   Scenario: Add bids and list
     Given a bid of item 1, user 1, quantity 10, and price 10.00 per unit
@@ -15,9 +15,9 @@ Feature: Bid
     When the user list all bids of user 1
     Then the below bids should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 1	  |	10		 | 10.00		|
-      | 2		 | 1	  |	10		 | 10.00		|
+      | 1      | 1      | 10       | 10.00        |
+      | 2      | 1      | 10       | 10.00        |
     When the user list all bids of user 2
     Then the below bids should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 2		 | 2	  |	10		 | 10.00		|
+      | 2      | 2      | 10       | 10.00        |

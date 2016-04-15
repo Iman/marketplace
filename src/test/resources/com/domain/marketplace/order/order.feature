@@ -14,17 +14,17 @@ Feature: Order
     When the user list all offers of user 1
     Then the below offers should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 1	  |	5		 | 10.00		|
+      | 1      | 1      | 5        | 10.00        |
 
     When the user list all orders of buyer 2
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of seller 1
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
 
   Scenario: A bid matches the earliest offer of two
@@ -40,22 +40,22 @@ Feature: Order
     When the user list all offers of user 1
     Then the below offers should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 1	  |	5		 | 10.00		|
+      | 1      | 1      | 5        | 10.00        |
 
     When the user list all offers of user 3
     Then the below offers should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 3	  |	10		 | 10.00		|
+      | 1      | 3      | 10       | 10.00        |
 
     When the user list all orders of buyer 2
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of seller 1
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of seller 3
     Then the below orders should be returned
@@ -79,23 +79,23 @@ Feature: Order
     When the user list all offers of user 1
     Then the below offers should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 1	  |	5		 | 10.00		|
+      | 1      | 1      | 5        | 10.00        |
 
     When the user list all orders of buyer 2
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of buyer 3
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 3		  | 1		 | 1	  | 5		 | 10.00		|
+      | 3       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of seller 1
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
-      | 3		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
+      | 3       | 1        | 1      | 5        | 10.00        |
 
 
   Scenario: An offer matches the earliest bid of two
@@ -111,7 +111,7 @@ Feature: Order
     When the user list all bids of user 3
     Then the below bids should be returned
       | itemId | userId | quantity | pricePerUnit |
-      | 1		 | 3	  |	5		 | 12.00		|
+      | 1      | 3      | 5        | 12.00        |
 
     When the user list all offers of user 1
     Then the below offers should be returned
@@ -120,7 +120,7 @@ Feature: Order
     When the user list all orders of buyer 2
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
 
     When the user list all orders of buyer 3
     Then the below orders should be returned
@@ -129,4 +129,4 @@ Feature: Order
     When the user list all orders of seller 1
     Then the below orders should be returned
       | buyerId | sellerId | itemId | quantity | pricePerUnit |
-      | 2		  | 1		 | 1	  | 5		 | 10.00		|
+      | 2       | 1        | 1      | 5        | 10.00        |
