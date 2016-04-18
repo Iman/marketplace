@@ -47,7 +47,12 @@ As a first step we have been asked to implement this marketplace, providing the 
 ```mvn clean test```
 
 ## BDD Test (Cucumber)
-```mvn clean verify -Dit.test=request/RequestRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"```
-```mvn clean verify -Dit.test=query/QueryRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"```
-```mvn clean verify -Dit.test=order/OrderRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"```
-```mvn clean verify -Dit.test=concurrency/ConcurrencyRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"```
+```
+mvn clean verify -Dit.test=request/RequestRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"
+
+mvn clean verify -Dit.test=query/QueryRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"
+
+mvn clean verify -Dit.test=order/OrderRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"
+
+mvn clean verify -Dit.test=concurrency/ConcurrencyRunner -Dcucumber.options=" --format html:report/cucumber-html-report-myReport"
+```
